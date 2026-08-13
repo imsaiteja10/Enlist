@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:3000/ -o /tmp/home.html -w \"%{http_code}\\\\n\")",
+      "Read(//tmp/**)",
+      "Bash(curl -s http://localhost:3000/ -o /tmp/home.html -w \"%{http_code}\\\\n\" --max-time 15)"
+    ]
+  }
+}
